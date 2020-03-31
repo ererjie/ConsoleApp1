@@ -226,7 +226,7 @@ namespace ConsoleApp1
     ///// </summary>
     //public class Program7
     //{
-    //    public static void Test<T>(Action<T> action, T t)
+    //   // public static void Test<T>(Action<T> action, T t);
     //    public static void Test<T>(Action<T> action, T t)
     //    {
     //        action(t);
@@ -428,87 +428,87 @@ namespace ConsoleApp1
     /// </summary>  
     //public class Program15
     //{
-    //    //static void Main(string[] args)
-    //    //{
-    //    //    int[] array = { 1, 4, 2, 9, 7, 6, 3, 5, 8 };
-    //    //    for (int i = 0; i < array.Length; i++)
-    //    //    {
-    //    //        for (int j = 0; j < array.Length - i - 1; j++)
-    //    //        {
-    //    //            if (array[j] > array[j + 1])//根据下标取值，j==0时，下标是0，值是9.
-    //    //            {
-    //    //                int temp = array[j];
-    //    //                array[j] = array[j + 1];
-    //    //                array[j + 1] = temp;
-    //    //            }
-    //    //        }
-    //    //    }
-    //    //    Console.WriteLine("升序排序后的顺序：");
-    //    //    foreach (int y in array)
-    //    //    {
-
-    //    //        Console.WriteLine(y + "");
-    //    //    }
-    //    //    Console.WriteLine();
-    //    //    Console.ReadLine();
-    //    //}
-
-    //    //static void Main(string[] args)
-    //    //{
-    //    //    int[] array= { 1, 4, 2, 9, 7, 6, 3, 5, 8 };
-    //    //    for (int i=0;i<array.Length;i++)
-    //    //    {
-    //    //        for (int j=0;j<array.Length-1;j++)
-    //    //        {
-    //    //            if (array[j]<array[j+1])
-    //    //            {
-    //    //                int temp = array[j];
-    //    //                array[j] = array[j + 1];
-    //    //                array[j + 1] = temp;
-    //    //            }
-    //    //        }
-    //    //    }
-    //    //    Console.WriteLine("降序排序顺序：");
-    //    //    for (int i=0;i<array.Length;i++)
-    //    //    {
-
-    //    //        Console.WriteLine(array[i]);
-    //    //    }
-    //    //    Console.ReadKey();
-    //    //}
-
     //    static void Main(string[] args)
     //    {
     //        int[] array = { 1, 4, 2, 9, 7, 6, 3, 5, 8 };
-    //        Array.Sort(array);//升序
     //        for (int i = 0; i < array.Length; i++)
     //        {
-    //            Console.WriteLine(array[i]);
+    //            for (int j = 0; j < array.Length - i - 1; j++)
+    //            {
+    //                if (array[j] > array[j + 1])//根据下标取值，j==0时，下标是0，值是9.
+    //                {
+    //                    int temp = array[j];
+    //                    array[j] = array[j + 1];
+    //                    array[j + 1] = temp;
+    //                }
+    //            }
     //        }
+    //        Console.WriteLine("升序排序后的顺序：");
+    //        foreach (int y in array)
+    //        {
+
+    //            Console.WriteLine(y + "");
+    //        }
+    //        Console.WriteLine();
     //        Console.ReadLine();
     //    }
-    //    //static void Main(string[] args)
-    //    //{
-    //    //    int[] array = { 1, 4, 2, 9, 7, 6, 3, 5, 8 };
-    //    //    Array.Sort(array);
-    //    //    Array.Reverse(array);//反转（Sort+Reverse为倒序）
-    //    //    for (int i = 0; i < array.Length; i++)
-    //    //    {
-    //    //        Console.WriteLine(array[i]);
-    //    //    }
-    //    //    Console.ReadLine();
-    //    //}
-    //    //static void Main(string[] args)
-    //    //{
-    //    //    int[] array = { 1, 4, 2, 9, 7, 6, 3, 5, 8 };
-    //    //    //array = array.OrderBy(x => x).ToArray();
-    //    //    array = array.OrderByDescending(x => x).ToArray();
-    //    //    for (int i = 0; i < array.Length; i++)
-    //    //    {
-    //    //        Console.WriteLine(array[i]);
-    //    //    }
-    //    //    Console.ReadLine();
-    //    //}
+
+    //static void Main(string[] args)
+    //{
+    //    int[] array= { 1, 4, 2, 9, 7, 6, 3, 5, 8 };
+    //    for (int i=0;i<array.Length;i++)
+    //    {
+    //        for (int j=0;j<array.Length-1;j++)
+    //        {
+    //            if (array[j]<array[j+1])
+    //            {
+    //                int temp = array[j];
+    //                array[j] = array[j + 1];
+    //                array[j + 1] = temp;
+    //            }
+    //        }
+    //    }
+    //    Console.WriteLine("降序排序顺序：");
+    //    for (int i=0;i<array.Length;i++)
+    //    {
+
+    //        Console.WriteLine(array[i]);
+    //    }
+    //    Console.ReadKey();
+    //}
+
+    //static void Main(string[] args)
+    //{
+    //    int[] array = { 1, 4, 2, 9, 7, 6, 3, 5, 8 };
+    //    Array.Sort(array);//升序
+    //    for (int i = 0; i < array.Length; i++)
+    //    {
+    //        Console.WriteLine(array[i]);
+    //    }
+    //    Console.ReadLine();
+    //}
+    //static void Main(string[] args)
+    //{
+    //    int[] array = { 1, 4, 2, 9, 7, 6, 3, 5, 8 };
+    //    Array.Sort(array);
+    //    Array.Reverse(array);//反转（Sort+Reverse为倒序）
+    //    for (int i = 0; i < array.Length; i++)
+    //    {
+    //        Console.WriteLine(array[i]);
+    //    }
+    //    Console.ReadLine();
+    //}
+    //static void Main(string[] args)
+    //{
+    //    int[] array = { 1, 4, 2, 9, 7, 6, 3, 5, 8 };
+    //    //array = array.OrderBy(x => x).ToArray();
+    //    array = array.OrderByDescending(x => x).ToArray();
+    //    for (int i = 0; i < array.Length; i++)
+    //    {
+    //        Console.WriteLine(array[i]);
+    //    }
+    //    Console.ReadLine();
+    //}
     //}
     #endregion
 
@@ -545,7 +545,7 @@ namespace ConsoleApp1
     //{
     //    static void Main(string[] args)
     //    {
-    //        string content= "hello123";
+    //        string content = "hello123";
     //        Console.WriteLine("substring(0)结果：" + content.Substring(2));
     //        Console.WriteLine("substring(0结果：)" + content.Substring(1, 5));
     //        Console.WriteLine("substring(0)结果：" + content.Substring(0, 7));
@@ -831,30 +831,234 @@ namespace ConsoleApp1
 
     #endregion
 
-    public class Pragram28
+    //public class Pragram28
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        Hashtable ht = new Hashtable();
+    //        ht.Add("1001", "方便面");
+    //        ht.Add("1002", "火腿肠");
+    //        Console.WriteLine("获取哈希集合的键");
+    //        foreach(string key in ht.Keys)
+    //        {
+    //            Console.WriteLine("商品编号：{0}", key);
+    //        }
+    //        Console.WriteLine("获取哈希集合的值");
+    //        foreach(string value in ht.Values)
+    //        {
+    //            Console.WriteLine("商品名称：{0}", value);
+    //        }
+    //        Console.WriteLine("获取哈希的键值");
+    //        foreach (string item in ht.Keys)
+    //        {
+    //            Console.WriteLine("商品编号{0},商品名称{1}", item, ht[item]);
+    //            Console.ReadLine();
+    //        }
+    //    }
+    //}
+    #endregion
+
+    ////Stack
+    //public class Program29
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        Stack stack = new Stack();
+    //        stack.Push("苹果");
+    //        stack.Push("橘子");
+    //        stack.Push("香蕉");
+    //        stack.Clear();
+    //        Console.WriteLine("{0}", stack.Count);
+    //       // Console.WriteLine("{0}", stack.Peek());
+    //        //Console.WriteLine("{0}", stack.Pop());
+    //        //Console.WriteLine("stack集合中有{0}元素", stack.Count);
+    //        Console.ReadLine();
+    //    }
+    //}
+
+    //public class Program30
+    //{
+    //    static void Main(string[] args)
+    //    {
+
+    //    }
+    //    //////继承
+    //    ////public class Father
+    //    ////{
+    //    ////    public virtual void Say()
+    //    ////    {
+    //    ////        Console.WriteLine("父类");
+    //    ////    }
+    //    ////}
+
+    //    ////public class Son : Father
+    //    ////{
+    //    ////    public override void Say()
+    //    ////    {
+    //    ////        base.Say();
+    //    ////    }
+    //    ////}
+
+    //    //    //重写
+    //    //public class Father
+    //    //{
+    //    //    public string Name { get; set; }
+
+    //    //    public Father()
+    //    //    {
+    //    //        Name = "father";
+    //    //    }
+    //    //}
+    //    //public class Son : Father
+    //    //{
+    //    //    public Son() : base()
+    //    //    {
+
+    //    //    }
+    //    //}
+    //}
+
+
+    //#region ref
+    ///// <summary>
+    ///// ref
+    ///// </summary>  
+    //public class Program31
+    //{
+    //    static int GetIntResult(int[] array, ref float avg, ref int max, ref int min)
+    //    {
+    //        int sum = 0;
+    //        max = array[0];
+    //        min = array[0];
+    //        for (int i = 0; i < array.Length; i++)
+    //        {
+    //            sum += array[i];
+    //            if (max < array[i])
+    //            {
+    //                max = array[i];
+    //            }
+    //            if (min > array[i])
+    //            {
+    //                min = array[i];
+    //            }
+    //        }
+    //        avg = sum / array.Length;
+    //        return sum;
+    //    }
+
+
+    //    ////ref
+    //    //static void Main(string[] args)
+    //    //{
+    //    //    int[] array = { 1, 2, 3, 4, 5, 6, 7 };
+    //    //    float avg = 0;
+    //    //    int max = 0;
+    //    //    int min = 0;
+    //    //    int sum = GetIntResult(array, ref avg, ref max, ref min);
+    //    //    Console.WriteLine("和：{0}\t平均值：{1}.最大值：{2}.最小值：{3}", sum, avg, max, min);
+    //    //    Console.ReadLine();
+    //    //}
+    //}
+    //#endregion
+
+    //#region out
+    ///// <summary>
+    ///// out
+    ///// </summary>  
+    //public class Program32
+    //{
+    //    static int Get(int[] array, out float avg, out int max, out int min)
+    //    {
+    //        int sum = 0;
+    //        max = array[0];
+    //        min = array[0];
+    //        for (int i = 0; i < array.Length; i++)
+    //        {
+    //            sum += array[i];
+    //            if (max < array[i])
+    //            {
+    //                max = array[i];
+    //            }
+    //            if (min > array[i])
+    //            {
+    //                min = array[i];
+    //            }
+    //        }
+    //        avg = sum / array.Length;
+    //        return sum;
+    //    }
+
+    //    static void Main(string[] args)
+    //    {
+    //        int[] arr = { 1, 2, 3, 4, 5, 6 };
+    //        float avg;
+    //        int max;
+    //        int min;
+    //        int sum = Get(arr, out avg, out max, out min);
+    //        Console.WriteLine("和：{0} " + "平均值：{1}" + "最大值：{2}" + "最小值：{3}", sum, avg, max, min);
+    //        Console.ReadLine();
+    //    }
+
+    //} 
+    //#endregion
+
+    /// <summary>
+    /// 计算器
+    /// </summary>  
+    public class Program33
     {
         static void Main(string[] args)
         {
-            Hashtable ht = new Hashtable();
-            ht.Add("1001", "方便面");
-            ht.Add("1002", "火腿肠");
-            Console.WriteLine("获取哈希集合的键");
-            foreach(string key in ht.Keys)
+        gotoName:
+            Console.WriteLine("请输入数字：");
+            string A=Console.ReadLine();
+            Console.WriteLine("请输入数字：");
+            string B = Console.ReadLine();
+            Console.WriteLine("请输入+，-，*，/");
+            string operater = Console.ReadLine();
+            double result = 0; 
+            if (operater == "+")
             {
-                Console.WriteLine("商品编号：{0}", key);
+                result = Convert.ToDouble(A) + Convert.ToDouble(B);
             }
-            Console.WriteLine("获取哈希集合的值");
-            foreach(string value in ht.Values)
+            else if (operater == "-")
             {
-                Console.WriteLine("商品名称：{0}", value);
+                result = Convert.ToDouble(A) - Convert.ToDouble(B);
             }
-            Console.WriteLine("获取哈希的键值");
-            foreach (string item in ht.Keys)
+            else if (operater == "*")
             {
-                Console.WriteLine("商品编号{0},商品名称{1}", item, ht[item]);
-                Console.ReadLine();
+                result = Convert.ToDouble(A) * Convert.ToDouble(B);
+
             }
+            else if (operater == "/")
+            {
+                if (Convert.ToDouble(B) != 0)
+                {
+                    result = Convert.ToDouble(A) / Convert.ToDouble(B);
+                }
+                else
+                {
+                    throw new Exception("除数不能为0");
+                }
+                goto gotoName;
+
+            }
+            else if (operater == "%")
+            {
+                if (Convert.ToDouble(B) != 0)
+                {
+                    result = Convert.ToDouble(A) % Convert.ToDouble(B);
+                }
+                else
+                {
+                    throw new Exception("除数不能为0");
+                }
+
+            }
+
+
+            Console.WriteLine("结果：{0}", result);
+            Console.ReadKey();
         }
     }
-    #endregion
 }
